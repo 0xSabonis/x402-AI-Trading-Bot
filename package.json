@@ -1,0 +1,26 @@
+{
+  "name": "x402-ai-trader",
+  "version": "1.0.0",
+  "description": "AI Trading Bot paying for signals via x402",
+  "main": "dist/bot.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/bot.js",
+    "provider": "npm run build && node dist/provider.js",
+    "dev": "ts-node src/bot.ts"
+  },
+  "dependencies": {
+    "@x402/client": "^0.1.0",
+    "@x402/server": "^0.1.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0",
+    "node-talib": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.2.0"
+  },
+  "license": "MIT"
+}
